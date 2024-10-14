@@ -1,0 +1,61 @@
+/* src/styles/Portfolio.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-header {
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+
+.portfolio-section {
+  @apply mb-16 p-6 bg-white rounded-lg shadow-md;
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-6 text-gray-800 border-b-2 border-blue-500 pb-2;
+}
+
+.experience-item, .project-item {
+  @apply mb-6 p-4 bg-gray-50 rounded-md transition-all duration-300 hover:shadow-lg;
+}
+
+.experience-title, .project-title {
+  @apply text-xl font-semibold text-blue-600;
+}
+
+.experience-company, .project-description {
+  @apply text-gray-600 mt-1;
+}
+
+.skill-tag {
+  @apply inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2 mb-2;
+}
+
+.contact-info {
+  @apply flex items-center mb-2;
+}
+
+.contact-icon {
+  @apply mr-2 text-blue-500;
+}
+
+.social-links {
+  @apply flex space-x-4 mt-4;
+}
+
+.social-link {
+  @apply text-blue-500 hover:text-blue-700 transition-colors duration-300;
+}
+
+@media (max-width: 640px) {
+  .portfolio-section {
+    @apply p-4;
+  }
+  
+  .section-title {
+    @apply text-2xl;
+  }
+}
